@@ -38,7 +38,7 @@
     "sc2-sdk": "0.0.5",
     "secure-random": "^1.1.1",
     "speakingurl": "^14.0.1",
-    "steem": "^0.6.4",
+    "steem": "^0.7.1",
     "xmldom": "^0.1.27"
   },
   "scripts": {
@@ -46,8 +46,7 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "build": "NODE_PATH=src react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "homepage" : "https://github.com/dyygtfx/steemiz"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "node-sass-chokidar": "^0.0.3"
