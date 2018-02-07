@@ -17,12 +17,13 @@ import registerServiceWorker from './registerServiceWorker';
 
 import steemconnect from 'sc2-sdk';
 import steem from 'steem';
-steem.api.setOptions({ url: process.env.REACT_APP_STEEM_API_URL });
-
+steem.api.setOptions({ url: 'https://api.steemit.com' });
+// 配置
 steemconnect.init({
-  app: 'steemiz.app',
-  callbackURL: process.env.REACT_APP_STEEMCONNECT_REDIRECT_URL,
-  accessToken: 'access_token'
+  app: 'cnsteem',
+  callbackURL: 'http://localhost: 3000',
+  accessToken: 'access_token',
+  scope: ['vote', 'comment']
 });
 steemconnect.setAccessToken(getToken());
 

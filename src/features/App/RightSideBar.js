@@ -62,6 +62,7 @@ class RightSideBar extends Component {
 
   render() {
     const { isSidebarOpen, trendingTags, me, currentTag, currentCategory } = this.props;
+
     const { tabs1, tabs2 } = this.state;
     return (
       <aside id="right_sidebar" className={isSidebarOpen ? "-is-open" : ""}>
